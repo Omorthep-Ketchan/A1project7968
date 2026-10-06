@@ -34,30 +34,91 @@
     <main class="container my-4">
         <main class="container my-4">
 
-            <section id="built">
-                <h2>What I Built</h2>
+            <!-- Section 2: What I Built -->
+            <section id="built" class="bg-white p-4 mb-4 rounded-3 shadow-sm">
+                <h2 class="mb-4">What I Built</h2>
 
-                <p>
-                    เว็บนี้เป็นเว็บ First Learning Portfolio ของผมครับ มีส่วนประกอบหลักๆ
-                    คือ
-                </p>
-                <ul>
-                    <li>ส่วนหัว : แถบสีชมพูด้านบน มีปุ่มเมนูให้กดดูหัวข้อต่างๆ</li>
-                    <li>About Me </li>
-                    <li>What I Built</li>
-                    <li>How I Built </li>
+                <p class="lead">เว็บนี้เป็นเว็บ First Learning Portfolio ของผมครับ มีส่วนประกอบหลักๆ คือ:</p>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item bg-transparent">ส่วนหัว : แถบสีชมพูด้านบน พร้อมเมนูแบบ Responsive</li>
+                    <li class="list-group-item bg-transparent">About Me : ข้อมูลส่วนตัวและงานอดิเรก</li>
+                    <li class="list-group-item bg-transparent">What I Built : โครงสร้างและแนวคิด Client/Server</li>
+                    <li class="list-group-item bg-transparent">How I Built : ขั้นตอนและเครื่องมือที่ใช้พัฒนา</li>
                 </ul>
 
-                <h3>เรื่อง Client กับ Server มีเกิดขึ้นไหม?</h3>
-                <p>
-                    มีเกิดขึ้นทั้งคู่ครับ ถึงจะเปิดดูในเครื่องตัวเองก็ตาม เพราะว่า
-                </p>
-                <ul>
-                    <li>Client : คือเว็บเบราว์เซอร์อย่าง Edge หรือ Chrome ที่ผมใช้เปิดดูหน้าเว็บ เป็นตัวคอยอ่านโค้ด HTML
-                        กับ
-                        CSS แล้วแสดงผลออกมา</li>
-                    <li>Server : คือตัว Live Server (Five Server) Extension ใน VS Code
-                        ทำหน้าที่เป็นเซิร์ฟเวอร์จำลองในเครื่อง คอยส่งไฟล์เว็บไปให้เบราว์เซอร์เปิดดูครับ</li>
+                <h3 class="mb-3">เรื่อง Client กับ Server มีเกิดขึ้นไหม?</h3>
+                <p>มีเกิดขึ้นทั้งคู่ครับ ถึงจะเปิดดูในเครื่องตัวเองก็ตาม เพราะว่า</p>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm"
+                            style="background-color: #FFF0F5; border-left: 6px solid #F472B6 !important;">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold" style="color: #DB2777;">Client</h5>
+                                <p class="card-text">เว็บเบราว์เซอร์อย่าง Edge หรือ Chrome ที่ผมใช้เปิดดูหน้าเว็บ
+                                    เป็นตัวคอยอ่านโค้ด HTML กับ CSS แล้วแสดงผลออกมา</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm"
+                            style="background-color: #FFF0F5; border-left: 6px solid #F472B6 !important;">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold" style="color: #DB2777;">Server</h5>
+                                <p class="card-text">ตัว Live Server (Five Server) Extension ใน VS Code
+                                    ทำหน้าที่เป็นเซิร์ฟเวอร์จำลองในเครื่อง คอยส่งไฟล์เว็บไปให้เบราว์เซอร์เปิดดูครับ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: How I Built -->
+            <section id="how" class="bg-white p-4 mb-4 rounded-3 shadow-sm">
+                <h2 class="mb-4">How I Built</h2>
+
+                <p class="lead">เว็บนี้ผมเริ่มทำตั้งแต่ศูนย์ โดยแบ่งขั้นตอนการทำออกเป็น 3 สเต็ปหลักๆ ครับ:</p>
+                <div class="row g-3 mb-4">
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-0 shadow-sm"
+                            style="background-color: #FFF0F5; border-left: 6px solid #F472B6 !important;">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold" style="color: #DB2777;">ขั้นตอนแรก (วางโครงสร้าง)</h5>
+                                <p class="card-text">ใช้ HTML วางโครงของหน้าเว็บทั้งหมดก่อน แบ่งเป็นส่วน header, nav และ
+                                    section ต่างๆ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-0 shadow-sm"
+                            style="background-color: #FFF0F5; border-left: 6px solid #F472B6 !important;">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold" style="color: #DB2777;">ขั้นตอนที่สอง (ตกแต่งหน้าตา)</h5>
+                                <p class="card-text">ใช้ CSS มาจัดสไตล์ คุมโทนสีชมพูขาว
+                                    และปรับแต่งฟอนต์กับระยะห่างให้อ่านง่าย</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-0 shadow-sm"
+                            style="background-color: #FFF0F5; border-left: 6px solid #F472B6 !important;">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold" style="color: #DB2777;">ขั้นตอนสุดท้าย (ทดสอบและแก้ไข)
+                                </h5>
+                                <p class="card-text">ใช้ Live Server เปิดพรีวิวดูหน้าตาเว็บแบบเรียลไทม์
+                                    แล้วคอยไล่แก้บั๊กการจัดวาง layout ต่างๆ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="mb-3">เครื่องมือและแหล่งข้อมูลที่ใช้ช่วยเรียนรู้</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent"><strong>โปรแกรมและเครื่องมือ:</strong> ใช้ VS Code
+                        ในการเขียนโค้ดทั้งหมด ร่วมกับ Extension อย่าง Live Server เพื่อรันเซิร์ฟเวอร์จำลองดูหน้าเว็บ
+                    </li>
+                    <li class="list-group-item bg-transparent"><strong>แหล่งข้อมูล:</strong> ศึกษาแท็ก HTML และคุณสมบัติ
+                        CSS พื้นฐานจากสไลด์ประกอบการสอนของวิชา CS100, เว็บไซต์ W3Schools และค้นหาเทคนิคการจัด layout
+                        เพิ่มเติมจากอินเทอร์เน็ตครับ</li>
                 </ul>
             </section>
 
